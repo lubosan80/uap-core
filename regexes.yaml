@@ -197,6 +197,13 @@ user_agent_parsers:
   - regex: '(Silk)/(\d+)\.(\d+)(?:\.([0-9\-]+))?'
     family_replacement: 'Amazon Silk'
 
+  # Seznam browser, should go before Safari and Chrome Mobile
+  - regex: 'Mobile.*(SznProhlizec)/(\d+)\.(\d+)(?:\.([0-9a-z]+))?'
+    family_replacement: 'Seznam Browser Mobile'
+
+  # Seznam browser, should go before Safari and Chrome Mobile
+  - regex: '(SznProhlizec)/(\d+)\.(\d+)(?:\.([0-9a-z]+))?'
+    family_replacement: 'Seznam Browser'
 
   # @ref: http://www.puffinbrowser.com
   - regex: '(Puffin)/(\d+)\.(\d+)(?:\.(\d+))?'
